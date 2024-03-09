@@ -1,0 +1,82 @@
+:root {
+  --primary:#0cd09f;
+  --white:#fff;
+  --transition:0.3s;
+  --black:#111;
+  --text:#555;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100px;
+  height: 100%;
+  background-color: #eeeeee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: -1px 0px 9px #222;
+          box-shadow: -1px 0px 9px #222;
+}
+.container .profile img {
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+  outline: 1px solid #111;
+  padding: 4px;
+}
+
+.container .links {
+  position: relative;
+  top: 10px;
+}
+
+.container .logo {
+  color: #fff;
+  background: #222;
+  border-radius: 50%;
+  /* padding: 20px 0; */
+  margin-top: 30px;
+  height: 70px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.container .logo h4 {
+  font-weight: bold;
+  margin-top: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container .links div {
+  margin: 15px 0;
+  cursor: pointer;
+  height: 100%;
+  padding: 1px 0;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.container .links div:hover {
+  background-color: #ddd;
+}
+.container .links div p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 600;
+}
